@@ -1,0 +1,20 @@
+<head>
+  <title>Microsoft Graph Webhook</title>
+
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.min.css" />
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.components.min.css" />
+</head>
+
+<body>
+<h1>Listening to Webhook</h1>
+
+<p>Subscription Id: <b id="subscriptionId"></b></p>
+<p>Now send an email to <b id="userId"></b> to get an email notification which will show below.</p>
+
+<div id="notifications"></div>
+
+<button id="signOutButton">Sign out and delete the subscription</button>
+
+<script type="text/javascript" src="http://localhost:3001/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/client.js"></script>
+</body>
